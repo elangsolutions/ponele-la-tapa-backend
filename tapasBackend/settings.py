@@ -18,6 +18,9 @@ DEBUG = ENV.bool('DEBUG')
 #ALLOWED_HOSTS = ENV.list('ALLOWED_HOSTS', default=[])
 ALLOWED_HOSTS = ['*']
 print(ALLOWED_HOSTS)
+CSRF_TRUSTED_ORIGINS = [
+    "https://ponele-la-tapa-backend-production.up.railway.app",
+]
 
 # Media files settings
 
@@ -30,11 +33,15 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, '../static')
 
 # Database
-
-DATABASES = {
-    'default': ENV.db()
-}
-
+if ENV("DATABASE_URL", default=None):
+    DATABASES = {'default': ENV.db()}
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
+    }
 # Application definition
 
 INSTALLED_APPS = [
