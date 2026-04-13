@@ -1,8 +1,30 @@
-Django==4.2.11
-djangorestframework==3.15.1
-django-environ==0.11.2
-django-extensions==3.2.3
-ipython==8.18.1
-psycopg2-binary==2.9.9
-django-colorfield==0.11.0
-Pillow==10.3.0
+altgraph @ file:///AppleInternal/Library/BuildRoots/2c89a47b-9dd5-11ef-938f-6e654a286000/Library/Caches/com.apple.xbs/Sources/python3/altgraph-0.17.2-py2.py3-none-any.whl
+appnope==0.1.4
+asgiref==3.11.1
+backcall==0.2.0
+decorator==5.2.1
+dj-database-url==3.0.1
+Django==4.2.30
+django-colorfield==0.3.2
+django-environ==0.4.5
+django-extensions==2.2.9
+djangorestframework==3.11.0
+future @ file:///AppleInternal/Library/BuildRoots/2c89a47b-9dd5-11ef-938f-6e654a286000/Library/Caches/com.apple.xbs/Sources/python3/future-0.18.2-py3-none-any.whl
+ipython==7.9.0
+jedi==0.19.2
+macholib @ file:///AppleInternal/Library/BuildRoots/2c89a47b-9dd5-11ef-938f-6e654a286000/Library/Caches/com.apple.xbs/Sources/python3/macholib-1.15.2-py2.py3-none-any.whl
+parso==0.8.6
+pexpect==4.9.0
+pickleshare==0.7.5
+Pillow==8.4.0
+prompt-toolkit==2.0.10
+psycopg2==2.8.5
+psycopg2-binary==2.9.11
+ptyprocess==0.7.0
+Pygments==2.20.0
+pytz==2026.1.post1
+six @ file:///AppleInternal/Library/BuildRoots/2c89a47b-9dd5-11ef-938f-6e654a286000/Library/Caches/com.apple.xbs/Sources/python3/six-1.15.0-py2.py3-none-any.whl
+sqlparse==0.5.5
+traitlets==5.14.3
+typing_extensions==4.15.0
+wcwidth==0.6.0

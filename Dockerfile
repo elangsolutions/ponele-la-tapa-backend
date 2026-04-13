@@ -12,4 +12,4 @@ COPY . .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["gunicorn", "your_project.wsgi:application", "--bind", "0.0.0.0:$PORT"]
+CMD ["sh", "-c", "python manage.py migrate && gunicorn your_project.wsgi:application --bind 0.0.0.0:${PORT:-8000}"]
